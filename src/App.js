@@ -1,13 +1,10 @@
 import './App.css';
-import ProjectCard from './components/project-card/project-card.component';
-
-import DonkeyKongImage from "./assets/level_2.png"
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from './pages/home.page';
-import AboutMePage from './pages/about_me.page';
-import ProjectsPage from './pages/projects.page';
-import Navigationbar from './pages/navigation_bar.page';
+import HomePage from "./pages/home/home.page"
+import AboutMePage from './pages/about_me/about_me.page';
+import ProjectsPage from './pages/projects/projects.page';
+import Navigationbar from './pages/navigation_bar/navigation_bar.page';
 
 function App() {
   return (

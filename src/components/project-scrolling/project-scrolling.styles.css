@@ -1,0 +1,51 @@
+.media-element>img {
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.media-element {
+    text-align: center;
+    min-width: 300px;
+}
+
+.icons-container {
+    display: flex;
+    /* border: 2px solid red; */
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icons-container img {
+    border-radius: 50%;
+    max-height: 50px;
+    width: auto;
+    padding: 0 10px;
+}
+
+.project-scrolling-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5em;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #f10606;
+    border-right: 5px solid #007BFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-scrolling-title:hover {
+    color: #000000;
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: grab;
+}
+
+.project-link {
+    text-decoration: none;
+
+}
