@@ -1,0 +1,107 @@
+.project-card {
+    width: 75%;
+    height: 400px;
+    max-width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.icons-description {
+    width: 55%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.icons-description .description {
+    height: 80%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.icons-description .description h2 {
+    text-align: center;
+    margin: 0;
+    line-height: normal;
+}
+
+.icons-description .description p {
+    margin: 15px;
+    line-height: 25px;
+}
+
+.icons-description .icons-container {
+    height: 20%;
+    width: 100%;
+    max-height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.icons-description .icons-container img {
+    border-radius: 50%;
+    height: 70%;
+    width: auto;
+    margin: 0 10px;
+}
+
+.image {
+    width: 45%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px 0 0 5px;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .project-card {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .icons-description {
+        width: 100%;
+        height: auto;
+    }
+
+    .icons-description .description {
+        height: auto;
+    }
+
+    .icons-description .icons-container {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .icons-description .icons-container img {
+        width: 20%;
+    }
+
+    .image {
+        display: none;
+    }
+}
